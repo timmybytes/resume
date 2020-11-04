@@ -1,11 +1,28 @@
 {
   "name": "resume",
-  "version": "1.0.0",
   "description": "Timothy Merritt's resume",
+  "homepage": "https://timmybytes.github.io/resume",
+  "version": "0.1.0",
+  "private": true,
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "sass --style=compressed src/scss:src/css",
+    "scss:watch": "sass --watch src/scss/:src/css/"
   },
-  "author": "Timothy Merritt",
-  "license": "MIT"
+  "author": {
+    "name": "Timothy Merritt",
+    "url": "https://timmybytes.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/timmybytes/resume"
+  },
+  "bugs": {
+    "url": "https://github.com/timmybytes/resume/issues"
+  },
+  "devDependencies": {
+    "sass": "^1.28.0"
+  }
 }

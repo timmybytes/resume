@@ -1,0 +1,11 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "Timothy Merritt's resume",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Timothy Merritt",
+  "license": "MIT"
+}

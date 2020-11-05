@@ -1,0 +1,22 @@
+.project-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  list-style-type: none;
+  .project-list__item {
+    background: $color-light;
+    border-radius: 4px;
+    box-shadow: 1px 1px 5px hsla(0, 0%, 0%, 0.356);
+    color: $color-purple;
+    display: inline-block;
+    font-weight: 300;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    .project-list__item-title {
+    }
+    .project-list__item-blurb {
+    }
+    .project-list__item-button {
+    }
+  }
+}

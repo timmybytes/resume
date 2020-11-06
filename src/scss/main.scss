@@ -3,17 +3,3 @@
 @import 'layout';
 @import 'header';
 @import 'projects';
-
-@media screen and (min-width: 700px) {
-  .header {
-    margin: 1rem;
-    padding: 2rem;
-  }
-  .avatar {
-    max-width: 200px;
-  }
-  h1 {
-    font-size: 72px;
-    font-weight: 900;
-  }
-}

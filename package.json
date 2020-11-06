@@ -7,8 +7,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "sass --style=compressed src/scss:src/css",
-    "scss:watch": "sass --watch src/scss/:src/css/"
+    "scss": "sass --style=compressed src/scss:src/css/",
+    "scss:watch": "sass --style=compressed src/scss/:src/css/ --watch"
   },
   "author": {
     "name": "Timothy Merritt",

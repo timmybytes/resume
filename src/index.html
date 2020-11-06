@@ -8,44 +8,146 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/main.css" />
+    <!--  -->
+    <!-- Title/Avatar -->
+    <!--  -->
     <title>Timothy Merritt's Resume</title>
   </head>
   <body>
     <div class="container">
-      <div class="header">
-        <div class="avatar">
-          <img src="./avatar_eyebrow.png" alt="Timothy Merritt's avatar" />
+      <div id="header" class="header">
+        <div class="header-avatar">
+          <img src="./img/avatar_eyebrow.png" alt="Timothy Merritt's avatar" />
         </div>
-        <h1>Timothy Merritt's Resume</h1>
+        <h1>Timothy Merritt</h1>
       </div>
+      <!--  -->
+      <!-- Intro paragraph -->
+      <!--  -->
       <div class="child">
-        <h2>About</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, odit.</p>
-      </div>
-      <div class="child">
-        <h2>Projects</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, illum!</p>
+        <h2 class="header-subtitle">
+          I'm a
+          <span class="underline-violet">developer</span> and
+          <span class="underline-green">designer</span>, passionate about open-source and
+          accessibility. I enjoy using React/JSX, ES6, Node/NPM, SCSS, Python, and Bash in my tech
+          stack.
+        </h2>
+        <!--  -->
+        <!-- Project List Grid -->
+        <!--  -->
+        <h2 class="project-list__title">Projects</h2>
         <ul class="project-list">
+          <!--  -->
+          <!-- Splate -->
+          <li class="project-list__item">
+            <h3 class="project-list__item-title">Splate</h3>
+            <picture>
+              <source media="(min-width:500px)" srcset="./img/splate@0.5x.png" />
+              <source media="(min-width:320px)" srcset="./img/splate@0.25x.png" />
+              <img
+                src="./img/splate@full.png"
+                alt="Image of Splate logo: a terminal window with the word 'Splate'"
+                style="width: 100%; height: auto"
+              />
+            </picture>
+            <p class="project-list__item-blurb">
+              An SCSS boilerplate for use in styling frontend web development projects.
+            </p>
+            <div class="project-list__item-buttons">
+              <button class="project-list__item-button"><a href="">Demo</a></button>
+              <button class="project-list__item-button">
+                <a href="https://github.com/timmybytes/splate">Source Code</a>
+              </button>
+            </div>
+          </li>
+          <!--  -->
+          <!--  -->
+          <li class="project-list__item">
+            <h3 class="project-list__item-title">Bat-Slider</h3>
+            <picture>
+              <source media="(min-width:500px)" srcset="./img/bat-slider@0.5x.png" />
+              <source media="(min-width:320px)" srcset="./img/bat-slider@0.25x.png" />
+              <img
+                src="./img/bat-slider@full.png"
+                alt="Image of Bat-Slider App, showing a still of Batman's 1943 suit with information related to the respective film."
+                style="width: 100%; height: auto"
+              />
+            </picture>
+            <p class="project-list__item-blurb">
+              A simple React app to display information on the various Bat-Suits seen in film over
+              the years.
+            </p>
+            <button class="project-list__item-button">
+              <a href="https://timmybytes.github.io/react-bat-slider-app/">Demo</a>
+            </button>
+            <button class="project-list__item-button">
+              <a href="https://github.com/timmybytes/bat-slider">Source Code</a>
+            </button>
+          </li>
           <li class="project-list__item">
             <h3 class="project-list__item-title">ONE</h3>
+            <picture>
+              <source media="(min-width:500px)" srcset="" />
+              <source media="(min-width:320px)" srcset="" />
+              <img src="" alt="" style="width: 100%; height: auto" />
+            </picture>
             <p class="project-list__item-blurb">A short description of the project</p>
-            <button class="project-list__item-button">Demo</button>
-            <button class="project-list__item-button">Source Code</button>
+            <button class="project-list__item-button"><a href="">Demo</a></button>
+            <button class="project-list__item-button"><a href="">Source Code</a></button>
           </li>
-          <li class="project-list__item">TWO</li>
-          <li class="project-list__item">THREE</li>
-          <li class="project-list__item">FOUR</li>
-          <li class="project-list__item">FIVE</li>
-          <li class="project-list__item">SIX</li>
-          <li class="project-list__item">MORE</li>
+          <li class="project-list__item">
+            <h3 class="project-list__item-title">ONE</h3>
+            <picture>
+              <source media="(min-width:500px)" srcset="" />
+              <source media="(min-width:320px)" srcset="" />
+              <img src="" alt="" style="width: 100%; height: auto" />
+            </picture>
+            <p class="project-list__item-blurb">A short description of the project</p>
+            <button class="project-list__item-button"><a href="">Demo</a></button>
+            <button class="project-list__item-button"><a href="">Source Code</a></button>
+          </li>
+          <li class="project-list__item">
+            <h3 class="project-list__item-title">ONE</h3>
+            <picture>
+              <source media="(min-width:500px)" srcset="" />
+              <source media="(min-width:320px)" srcset="" />
+              <img src="" alt="" style="width: 100%; height: auto" />
+            </picture>
+            <p class="project-list__item-blurb">A short description of the project</p>
+            <button class="project-list__item-button"><a href="">Demo</a></button>
+            <button class="project-list__item-button"><a href="">Source Code</a></button>
+          </li>
+          <li class="project-list__item">
+            <h3 class="project-list__item-title">ONE</h3>
+            <picture>
+              <source media="(min-width:500px)" srcset="" />
+              <source media="(min-width:320px)" srcset="" />
+              <img src="" alt="" style="width: 100%; height: auto" />
+            </picture>
+            <p class="project-list__item-blurb">A short description of the project</p>
+            <button class="project-list__item-button"><a href="">Demo</a></button>
+            <button class="project-list__item-button"><a href="">Source Code</a></button>
+          </li>
+          <li class="project-list__item">
+            <h3 class="project-list__item-title">ONE</h3>
+            <picture>
+              <source media="(min-width:500px)" srcset="" />
+              <source media="(min-width:320px)" srcset="" />
+              <img src="" alt="" style="width: 100%; height: auto" />
+            </picture>
+            <p class="project-list__item-blurb">A short description of the project</p>
+            <button class="project-list__item-button"><a href="">Demo</a></button>
+            <button class="project-list__item-button"><a href="">Source Code</a></button>
+          </li>
         </ul>
       </div>
       <div class="child">
-        <h2>Work</h2>
+        <h2 class="section-title">Work</h2>
       </div>
       <div class="child">
-        <h2>Education</h2>
+        <h2 class="section-title">Education</h2>
       </div>
     </div>
+    <script src="./js/index.js"></script>
   </body>
 </html>

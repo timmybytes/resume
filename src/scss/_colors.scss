@@ -4,3 +4,71 @@ $color-blue: #4b84e5;
 $color-purple: #a36fe6;
 $color-green: #61a840;
 $color-turquoise: #159f9f;
+$color-pink: #ec9de6;
+$color-violet: #6d6fd6;
+
+@mixin color($hue: dark) {
+  @if $hue == dark {
+    color: $color-dark;
+  }
+  @if $hue == light {
+    color: $color-light;
+  }
+  @if $hue == blue {
+    color: $color-blue;
+  }
+  @if $hue == purple {
+    color: $color-purple;
+  }
+  @if $hue == green {
+    color: $color-green;
+  }
+  @if $hue == turquoise {
+    color: $color-turquoise;
+  }
+  @if $hue == pink {
+    color: $color-pink;
+  }
+  @if $hue == violet {
+    color: $color-violet;
+  }
+}
+
+.color-dark {
+  color: $color-dark;
+}
+
+.color-light {
+  color: $color-light;
+}
+
+.color-blue {
+  color: $color-blue;
+}
+
+.color-purple {
+  color: $color-purple;
+  border-bottom: 2px $color-purple;
+}
+.underline-green {
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
+  text-decoration-color: $color-green;
+}
+.color-turquoise {
+  color: $color-turquoise;
+}
+.color-pink {
+  color: $color-pink;
+}
+.underline-violet {
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
+  text-decoration-color: $color-violet;
+}
+
+@mixin gradient-text($color-1: blue, $color-2: pink) {
+  background: -webkit-linear-gradient($color-1, $color-2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

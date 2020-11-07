@@ -1,6 +1,3 @@
-///////////////////////////////
-// Shrink Header on Scroll
-///////////////////////////////
 // * FIXME: Add screen-size style adjustments
 // Breakpoints: 700, 375
 // function myFunction(x) {
@@ -15,6 +12,11 @@
 // var x = window.matchMedia('(max-width: 700px)');
 // myFunction(x);
 
+// const borders =
+
+///////////////////////////////
+// Shrink Header on Scroll
+///////////////////////////////
 const header = document.getElementById('header');
 
 window.onscroll = function () {
@@ -22,10 +24,6 @@ window.onscroll = function () {
 };
 
 function scrollFunction() {
-  const defaults = () => {
-    header.style.margin;
-    header.style.padding;
-  };
   //
   if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
     // Header Container

@@ -1,22 +1,22 @@
 .header {
   align-items: center;
-  background-color: $color-light;
-  color: $color-dark;
+  background: $color-light;
+  // color: $color-dark;
   display: flex;
-  flex-direction: column;
-  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
-    Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  grid-column: 2/5;
-  justify-content: center;
-  line-height: 1.1;
-  padding: 0;
+  // flex-direction: column;
+  // font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+  //   Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  // grid-column: 1;
+  // justify-content: center;
+  // line-height: 1.1;
+  // padding: 0;
   position: fixed;
-  top: 0;
+  // top: 0;
   width: 100%;
   @media screen and (min-width: 700px) {
-    padding: 100px 0 20px 30px;
-    justify-content: left;
-    flex-direction: row;
+    // padding: 100px 0 20px 30px;
+    // justify-content: left;
+    // flex-direction: row;
   }
   .header-avatar {
     background: $color-light;
@@ -105,8 +105,9 @@
 }
 
 .header-nav {
+  border: 1px solid black;
   display: none;
-  width: 100%;
+  // width: 100%;
   ul {
     list-style-type: none;
     display: flex;

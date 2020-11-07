@@ -36,8 +36,12 @@ function scrollFunction() {
     header.children[0].style.marginRight = '50px';
     // Header Text
     header.children[1].style.fontSize = '1.5rem';
+    // Header Nav
+    console.log(header.children[2]);
+    header.children[2].style.display = 'inline';
   } else {
     // Reset styles if at top of page
+    header.children[2].style.display = 'none';
     header.style.display = null;
     header.style.padding = '100px 0 20px 30px';
     header.children[0].style.maxWidth = null;

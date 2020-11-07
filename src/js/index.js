@@ -22,6 +22,10 @@ window.onscroll = function () {
 };
 
 function scrollFunction() {
+  const defaults = () => {
+    header.style.margin;
+    header.style.padding;
+  };
   //
   if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
     // Header Container
@@ -29,6 +33,7 @@ function scrollFunction() {
     header.style.padding = '.5rem';
     // Header Avatar
     header.children[0].style.maxWidth = '50px';
+    header.children[0].style.marginRight = '50px';
     // Header Text
     header.children[1].style.fontSize = '1.5rem';
   } else {

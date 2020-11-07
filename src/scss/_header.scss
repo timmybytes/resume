@@ -32,52 +32,72 @@
     }
     @media screen and (min-width: 700px) {
       display: initial;
-      margin: auto 55px auto 0px;
+      margin: auto 0px auto 0px;
       max-width: 200px;
     }
   }
-  .header-text {
-    display: flex;
-    flex-direction: column;
-    h1 {
-      font-size: 2.5rem;
-      font-weight: 900;
-      text-align: center;
-      transition: 0.3s;
-      @media screen and (min-width: 375px) {
-        font-size: 3rem;
-        text-align: left;
-      }
-      @media screen and (min-width: 700px) {
-        font-size: 5rem;
-        text-align: left;
-      }
+  h1 {
+    font-family: 'Barlow Condensed';
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-align: center;
+    transition: 0.3s;
+    text-transform: uppercase;
+    @media screen and (min-width: 320px) {
+      font-size: 11vw;
+      text-align: left;
+    }
+    @media screen and (min-width: 375px) {
+    }
+    @media screen and (min-width: 700px) {
+      font-size: 3.2rem;
+    }
+    @media screen and (min-width: 800px) {
+      font-size: 3.7rem;
+    }
+    @media screen and (min-width: 900px) {
+      font-size: 4rem;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 102px;
     }
   }
 }
 
 .header-subtitle {
-  @include color(blue);
+  color: $color-dark04;
   font-size: 1.3rem;
-  margin-top: 50px;
+  margin-top: 500px;
+  @media screen and (min-width: 320px) {
+    margin-top: 200px;
+    font-weight: 600;
+    line-height: 1.4;
+    padding: 0 3vw;
+  }
+  @media screen and (min-width: 400px) {
+    margin-top: 210px;
+  }
+  @media screen and (min-width: 400px) {
+    margin-top: 240px;
+  }
+  @media screen and (min-width: 500px) {
+    margin-top: 250px;
+  }
   @media screen and (min-width: 700px) {
     margin-top: 300px;
     font-weight: 900;
     font-size: 42px;
   }
-}
-
-@media screen and (min-width: 700px) {
-  .header {
-    // margin: 1rem;
-    // padding: 2rem;
-  }
-  .header-avatar {
-    max-width: 200px;
-    // margin: 0 5px 0 5px;
-  }
-  h1 {
-    font-size: 72px;
+  @media screen and (min-width: 900px) {
+    margin-top: 300px;
+    margin-bottom: 200px;
     font-weight: 900;
+    font-size: 42px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 350px;
+    margin-bottom: 400px;
+    font-weight: 900;
+    font-size: 42px;
   }
 }

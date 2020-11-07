@@ -1,11 +1,19 @@
 $color-dark: rgb(17, 16, 16);
+$color-dark02: rgb(37, 36, 36);
+$color-dark03: rgb(51, 50, 50);
+$color-dark04: rgb(68, 67, 67);
+$color-dark05: rgb(83, 83, 83);
 $color-light: #f2f2f2;
-$color-blue: #4b84e5;
-$color-purple: #a36fe6;
+$color-light02: #e7e5e5;
+$color-light03: #dbd8d8;
+$color-light04: #c7c5c5;
+$color-light05: #b1aeae;
 $color-green: #61a840;
 $color-turquoise: #159f9f;
-$color-pink: #ec9de6;
+$color-blue: #4b84e5;
 $color-violet: #6d6fd6;
+$color-purple: #a36fe6;
+$color-pink: #ec9de6;
 
 @mixin color($hue: dark) {
   @if $hue == dark {
@@ -54,6 +62,9 @@ $color-violet: #6d6fd6;
   text-decoration: underline;
   text-decoration-thickness: 4px;
   text-decoration-color: $color-green;
+  @media screen and (min-width: 320px) {
+    text-decoration-thickness: 2px;
+  }
 }
 .color-turquoise {
   color: $color-turquoise;
@@ -63,8 +74,11 @@ $color-violet: #6d6fd6;
 }
 .underline-violet {
   text-decoration: underline;
-  text-decoration-thickness: 4px;
+  text-decoration-thickness: 2px;
   text-decoration-color: $color-violet;
+  @media screen and (min-width: 700px) {
+    text-decoration-thickness: 4px;
+  }
 }
 
 @mixin gradient-text($color-1: blue, $color-2: pink) {
